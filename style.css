@@ -50,7 +50,7 @@ section.body p + p{margin-top:14px;}
 .proof b{color:var(--accent);}
 .part{margin-top:36px;}
 .part h4{font-family:var(--serif);font-weight:500;font-size:18px;margin-bottom:10px;}
-.matrix{margin:24px 0 8px;max-width:640px;}
+.matrix{margin:24px 0 8px;max-width:100%;}
 .matrix svg{width:100%;height:auto;display:block;}
 .matrix figcaption{margin-top:10px;font-size:13px;color:var(--muted);max-width:60ch;}
 
