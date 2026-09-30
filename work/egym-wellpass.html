@@ -45,6 +45,84 @@
     <div class="part">
       <h4>3. What's next — one shared language for research, product &amp; strategy</h4>
       <p>I'm now building this into something more ambitious: a framework and a set of AI tools that connect segment → motivation theory → problem space → KPI → JTBD → measurable outcome — so anyone, not just a researcher, can get a grounded answer. In practice, this is currently three Claude skills: one that recommends the right segment for a given project, one that checks whether a design or flow works for a specific segment's psychology, and one — more ambitious — that tries to connect the whole chain from segment to measurable outcome in a single pass.</p>
+
+      <figure class="matrix">
+        <svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative decision-flow diagram connecting segment, motivation, problem, strategy, KPIs, feature, JTBD and UX outcome, each marked as defined, an evidence gap, or deliberately deferred">
+
+          <!-- optional step 0 -->
+          <rect x="20" y="20" width="110" height="50" rx="4" fill="var(--bg)" stroke="var(--line)" stroke-width="1.3" stroke-dasharray="4 3"/>
+          <text x="75" y="41" text-anchor="middle" font-size="11.5" font-weight="500" fill="var(--muted)">Moment</text>
+          <text x="75" y="56" text-anchor="middle" font-size="10" fill="var(--muted)">(optional)</text>
+          <line x1="75" y1="70" x2="130" y2="118" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+
+          <!-- chain nodes -->
+          <!-- Segment: defined -->
+          <rect x="20" y="120" width="105" height="60" rx="4" fill="#E7F1EA" stroke="#2F4A40" stroke-width="1.5"/>
+          <text x="72" y="145" text-anchor="middle" font-size="12.5" font-weight="600" fill="#2F4A40">Segment</text>
+          <text x="72" y="162" text-anchor="middle" font-size="10" fill="#2F4A40">validated</text>
+
+          <!-- Motivation: defined -->
+          <rect x="150" y="120" width="105" height="60" rx="4" fill="#E7F1EA" stroke="#2F4A40" stroke-width="1.5"/>
+          <text x="202" y="145" text-anchor="middle" font-size="12.5" font-weight="600" fill="#2F4A40">Motivation</text>
+          <text x="202" y="162" text-anchor="middle" font-size="10" fill="#2F4A40">segment-linked</text>
+
+          <!-- Problem: evidence gap -->
+          <rect x="280" y="120" width="105" height="60" rx="4" fill="#F6E9E7" stroke="#A6483E" stroke-width="1.5"/>
+          <text x="332" y="145" text-anchor="middle" font-size="12.5" font-weight="600" fill="#A6483E">Problem</text>
+          <text x="332" y="162" text-anchor="middle" font-size="10" fill="#A6483E">evidence gap</text>
+
+          <!-- Strategy: deferred -->
+          <rect x="410" y="120" width="105" height="60" rx="4" fill="var(--bg)" stroke="var(--muted)" stroke-width="1.3" stroke-dasharray="4 3"/>
+          <text x="462" y="145" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--muted)">Strategy</text>
+          <text x="462" y="162" text-anchor="middle" font-size="10" fill="var(--muted)">reference</text>
+
+          <!-- KPIs: deferred -->
+          <rect x="540" y="120" width="105" height="60" rx="4" fill="var(--bg)" stroke="var(--muted)" stroke-width="1.3" stroke-dasharray="4 3"/>
+          <text x="592" y="145" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--muted)">KPIs</text>
+          <text x="592" y="162" text-anchor="middle" font-size="10" fill="var(--muted)">deferred OK</text>
+
+          <!-- Feature: deferred -->
+          <rect x="670" y="120" width="105" height="60" rx="4" fill="var(--bg)" stroke="var(--muted)" stroke-width="1.3" stroke-dasharray="4 3"/>
+          <text x="722" y="145" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--muted)">Feature</text>
+          <text x="722" y="162" text-anchor="middle" font-size="10" fill="var(--muted)">hypotheses</text>
+
+          <!-- JTBD: evidence gap -->
+          <rect x="410" y="220" width="105" height="60" rx="4" fill="#F6E9E7" stroke="#A6483E" stroke-width="1.5"/>
+          <text x="462" y="245" text-anchor="middle" font-size="12.5" font-weight="600" fill="#A6483E">JTBD</text>
+          <text x="462" y="262" text-anchor="middle" font-size="10" fill="#A6483E">partial coverage</text>
+
+          <!-- UX Outcome: defined -->
+          <rect x="540" y="220" width="105" height="60" rx="4" fill="#E7F1EA" stroke="#2F4A40" stroke-width="1.5"/>
+          <text x="592" y="245" text-anchor="middle" font-size="12.5" font-weight="600" fill="#2F4A40">UX outcome</text>
+          <text x="592" y="262" text-anchor="middle" font-size="10" fill="#2F4A40">tier-mapped</text>
+
+          <!-- arrows along top chain -->
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="var(--muted)"/></marker>
+          </defs>
+          <line x1="125" y1="150" x2="148" y2="150" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#arrow)"/>
+          <line x1="255" y1="150" x2="278" y2="150" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#arrow)"/>
+          <line x1="385" y1="150" x2="408" y2="150" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#arrow)"/>
+          <line x1="515" y1="150" x2="538" y2="150" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#arrow)"/>
+          <line x1="645" y1="150" x2="668" y2="150" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#arrow)"/>
+          <!-- drop down to JTBD / UX row -->
+          <line x1="722" y1="180" x2="722" y2="200" stroke="var(--muted)" stroke-width="1.3"/>
+          <line x1="722" y1="200" x2="462" y2="200" stroke="var(--muted)" stroke-width="1.3"/>
+          <line x1="462" y1="200" x2="462" y2="218" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#arrow)"/>
+          <line x1="515" y1="250" x2="538" y2="250" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+          <!-- legend -->
+          <line x1="20" y1="296" x2="780" y2="296" stroke="var(--line)" stroke-width="1"/>
+          <rect x="20" y="312" width="14" height="14" rx="2" fill="#E7F1EA" stroke="#2F4A40" stroke-width="1.3"/>
+          <text x="40" y="323" font-size="10.5" fill="var(--ink)">Defined (evidence tier stated)</text>
+          <rect x="260" y="312" width="14" height="14" rx="2" fill="#F6E9E7" stroke="#A6483E" stroke-width="1.3"/>
+          <text x="280" y="323" font-size="10.5" fill="var(--ink)">Evidence gap (research needed)</text>
+          <rect x="520" y="312" width="14" height="14" rx="2" fill="var(--bg)" stroke="var(--muted)" stroke-width="1.3" stroke-dasharray="3 2"/>
+          <text x="540" y="323" font-size="10.5" fill="var(--ink)">Deliberately deferred</text>
+        </svg>
+        <figcaption>Illustrative structure only — the three-state framing logic (defined / evidence gap / deliberately deferred), not the shipped tool's real routing or per-project detail.</figcaption>
+      </figure>
+
       <p>That last one was tested and judged too complex by my manager; it's now being split into focused, single-purpose tools instead. That's a live, ongoing process, not a finished product.</p>
       <div class="proof"><b>The ambition —</b> this becomes shared language across product, design, research, marketing and leadership — for how the business talks about users and builds value for them, in both B2C and B2B (fitness partner) contexts.</div>
     </div>
