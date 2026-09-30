@@ -52,11 +52,11 @@ section.body p + p{margin-top:14px;}
 .proof b{color:var(--proof-border);}
 .part{margin-top:36px;}
 .part h4{font-family:var(--serif);font-weight:500;font-size:18px;margin-bottom:10px;}
-.matrix{margin:24px 0 8px;max-width:100%;}
+.matrix{margin:24px 0 8px;max-width:66ch;}
 .matrix svg{width:100%;height:auto;display:block;}
 .matrix figcaption{margin-top:10px;font-size:13px;color:var(--muted);max-width:66ch;}
 
-.case-image{margin:28px 0 8px;max-width:100%;}
+.case-image{margin:28px 0 8px;max-width:66ch;}
 .case-image img{width:100%;height:auto;display:block;border-radius:4px;border:1px solid var(--line);}
 .case-image figcaption{margin-top:10px;font-size:13px;color:var(--muted);max-width:66ch;}
 
