@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sally Kuehnl — UX Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF9F5; --ink:#1B1D1E; --muted:#6E6C63; --accent:#3C594F;
+    --line:#E2DFD3; --card:#F2F0E8; --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,sans-serif;
+    box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){ --bg:#17181A; --ink:#EDEBE4; --muted:#9C998E; --accent:#7FA895; --line:#2C2E2C; --card:#1F2120; }
+  }
+  :root[data-theme="dark"]{ --bg:#17181A; --ink:#EDEBE4; --muted:#9C998E; --accent:#7FA895; --line:#2C2E2C; --card:#1F2120; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  .wrap{max-width:700px;margin:0 auto;padding:0 24px;}
+  header{position:sticky;top:0;padding-top:calc(env(safe-area-inset-top,0px) + 18px);padding-bottom:18px;background:var(--bg);border-bottom:1px solid var(--line);z-index:10;}
+  header .row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+  header .name{font-family:var(--serif);font-size:19px;font-weight:500;}
+  nav{display:flex;gap:22px;font-size:14px;color:var(--muted);}
+  nav a{text-decoration:none;}
+  nav a:hover{color:var(--accent);}
+  .hero{padding:76px 0 54px;}
+  .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(30px,5vw,44px);line-height:1.18;max-width:15ch;}
+  .hero p{margin-top:22px;max-width:56ch;color:var(--muted);font-size:16.5px;}
+  .hero .thread{margin-top:28px;font-size:15px;color:var(--ink);border-left:2px solid var(--accent);padding-left:16px;max-width:52ch;}
+  section.study{padding:56px 0;border-top:1px solid var(--line);}
+  .tag{display:inline-block;font-size:13px;color:var(--accent);background:var(--card);padding:4px 11px;border-radius:3px;margin-bottom:16px;}
+  h2.title{font-family:var(--serif);font-weight:500;font-size:clamp(22px,3.4vw,29px);line-height:1.28;max-width:22ch;}
+  h3.sub{font-family:var(--sans);font-weight:600;font-size:14.5px;margin:30px 0 8px;color:var(--ink);}
+  section.study p{max-width:66ch;color:var(--ink);font-size:16px;}
+  section.study p + p{margin-top:14px;}
+  .proof{margin-top:14px;padding:14px 16px;background:var(--card);border-radius:4px;font-size:15px;max-width:64ch;}
+  .proof b{color:var(--accent);}
+  .part{margin-top:36px;}
+  .part h4{font-family:var(--serif);font-weight:500;font-size:18px;margin-bottom:10px;}
+  .matrix{margin-top:20px;max-width:460px;}
+  .matrix svg{width:100%;height:auto;}
+  footer{padding:64px 24px 80px;text-align:center;border-top:1px solid var(--line);}
+  footer p{color:var(--muted);font-size:14.5px;}
+  footer .name2{font-family:var(--serif);font-size:20px;margin-bottom:10px;}
+  @media (max-width:560px){ nav{gap:14px;font-size:13px;} .hero{padding:56px 0 40px;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap row">
+    <span class="name">Sally Kuehnl — UX Research</span>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <h1>20 years turning research into decisions people act on.</h1>
+  <p>UX Research leadership across consumer brand, fitness tech and B2B/B2C platforms — from single studies to the frameworks and AI-enabled systems that let insight outlive them.</p>
+  <div class="thread">A throughline across this work: segmentation and JTBD frameworks that keep paying off years after delivery, research operations rebuilt on AI so insight scales past one researcher's bandwidth, and a growing push to make research language usable by product, design and leadership alike.</div>
+</div>
+
+<div id="work">
+
+<section class="study">
+  <div class="wrap">
+    <span class="tag">Microsoft Skype</span>
+    <h2 class="title">Protecting the habits that mattered while Skype became Microsoft</h2>
+    <h3 class="sub">Context</h3>
+    <p>Following Skype's integration into Microsoft, the product needed a visual and brand refresh that felt unmistakably Microsoft while remaining recognisably Skype to its loyal, long-standing user base. Skype's brand loyalty was strong, and the risk was real: change too much, too fast, and risk a backlash from users who felt the product they knew had disappeared.</p>
+    <h3 class="sub">My role &amp; approach</h3>
+    <p>Alongside desirability and emotion research into the rebrand itself, I focused on protecting the core user flows the existing base relied on — flows that, over years, had become habitual. The clearest example was the ability to see, at a glance, which contacts were currently online.</p>
+    <h3 class="sub">The insight</h3>
+    <p>An early design direction shifted the primary view toward "recent calls," which didn't reliably surface who was currently online. For core users, this was a different mental model entirely — recent calls answered "who did I speak to," not "who's around right now," which was how they'd always used Skype to decide who to reach out to. Usability testing combined with BI data confirmed this was a load-bearing use case, central to how people actually navigated the product day to day.</p>
+    <h3 class="sub">What changed</h3>
+    <p>I pushed back on that design direction, using the combined research and behavioural data to make the case. Online status visibility was reinstated as a clear, prominent part of the redesigned contact list, alongside the new Microsoft-aligned visual language, Metro.</p>
+    <div class="proof"><b>Outcome —</b> The rebrand shipped without the backlash that was a genuine risk going in. There was the usual pocket of resistance you get with any redesign, but it was limited, and the change was broadly accepted by the majority of users.</div>
+    <h3 class="sub">Reflection</h3>
+    <p>Brand and UX risk are often treated as one problem, but they're not — you can change how something looks quite substantially as long as you protect how it behaves. Separating those two risks made it possible to give Microsoft the rebrand it needed without asking loyal users to relearn how the product worked.</p>
+  </div>
+</section>
+
+<section class="study">
+  <div class="wrap">
+    <span class="tag">Freeletics</span>
+    <h2 class="title">Building a segmentation model that's still the foundation, years after shipping</h2>
+    <h3 class="sub">Context</h3>
+    <p>Freeletics segmented users by fitness level only — beginner, intermediate, advanced. It was a proxy for physical ability, not for why someone trains, which meant features couldn't be designed with any real understanding of what would actually motivate someone to keep going.</p>
+    <h3 class="sub">My role &amp; approach</h3>
+    <p>Product management asked me to explore motivation psychology, specifically self-determination theory (SDT). I spent the first weeks reading into the field properly — SDT, intrinsic and extrinsic motivation, self-efficacy, autonomy, competence, relatedness — before recommending we base a proper market segmentation on it. Working with an external research agency, I delivered six segments built on SDT combined with personality and training behaviour, spanning a spectrum from amotivated through to intrinsically motivated.</p>
+    <p>To bring the rest of the business along, I ran a series of short "research bites" — one motivation concept at a time, explained simply, each paired with a clear "opportunity for Freeletics" so the theory always connected back to something actionable.</p>
+    <div class="matrix">
+      <svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg">
+        <text x="230" y="18" text-anchor="middle" font-family="Inter" font-size="12" fill="var(--muted)">Illustrative structure — segment names abstracted</text>
+        <line x1="20" y1="105" x2="440" y2="105" stroke="var(--line)" stroke-width="1"/>
+        <circle cx="90" cy="105" r="60" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+        <circle cx="230" cy="105" r="60" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.6"/>
+        <circle cx="370" cy="105" r="60" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+        <text x="90" y="45" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--muted)">Amotivated</text>
+        <text x="230" y="45" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--muted)">Extrinsically motivated</text>
+        <text x="370" y="45" text-anchor="middle" font-family="Inter" font-size="11" fill="var(--muted)">Intrinsically motivated</text>
+        <circle cx="90" cy="95" r="4" fill="var(--accent)"/><circle cx="90" cy="120" r="4" fill="var(--accent)"/>
+        <circle cx="230" cy="95" r="4" fill="var(--accent)"/><circle cx="230" cy="120" r="4" fill="var(--accent)"/>
+        <circle cx="370" cy="95" r="4" fill="var(--accent)"/><circle cx="370" cy="120" r="4" fill="var(--accent)"/>
+      </svg>
+    </div>
+    <h3 class="sub">The insight</h3>
+    <p>Motivation type is a far more stable segmentation axis than behaviour or fitness level, because how someone is motivated tends to hold steady even as their behaviour changes over time. That durability is what makes the framework worth investing in — it doesn't need re-doing every time usage patterns shift.</p>
+    <h3 class="sub">What changed</h3>
+    <p>The six segments became the basis for how product and design thought about users going forward, replacing the old beginner/intermediate/advanced split as the working mental model.</p>
+    <div class="proof"><b>Outcome —</b> I left Freeletics three and a half years ago. The segmentation is still in use today — since updated and built on, but with my original framework as its foundation.</div>
+    <h3 class="sub">Reflection</h3>
+    <p>The "research bites" format ended up mattering as much as the research itself. A senior researcher's real leverage often isn't just doing the analysis correctly — it's translating academic theory into something a whole product organisation can pick up and use without reading the white papers themselves.</p>
+  </div>
+</section>
+
+<section class="study">
+  <div class="wrap">
+    <span class="tag">EGYM</span>
+    <h2 class="title">Finding the trust gap between physios and patients, and shipping a fix</h2>
+    <h3 class="sub">Context</h3>
+    <p>EGYM wanted to explore a new squat machine concept and needed to understand the daily realities of the people who'd recommend and use it: physiotherapists and gym trainers. The brief was both diagnostic — what are their real workflow pains? — and evaluative — is a squat machine actually desirable to this audience?</p>
+    <h3 class="sub">My role &amp; approach</h3>
+    <p>I ran 14 exploratory interviews: 7 physiotherapists, 7 gym trainers. The research showed the two roles' processes and challenges were largely the same — trainers simply went into less depth in their consultations than physios did, but the overall structure held across both.</p>
+    <h3 class="sub">The insight</h3>
+    <p>The clearest, most consistent pain wasn't about exercises or equipment — it was trust and visibility. Physios relied on patients self-reporting exercise completion between sessions (a diary entry, occasionally a photo or video). This was unreliable and left physios making treatment decisions without real data on what their patients had actually done.</p>
+    <h3 class="sub">What changed</h3>
+    <p>This reframed the opportunity for the squat machine beyond exercise desirability — which was confirmed; squatting form is foundational and something everyone needs to be able to do safely — toward a bigger question: could the machine also close the data gap between what happens in a session and what a physio can see afterwards.</p>
+    <div class="proof"><b>Outcome —</b> The squat machine shipped. In its first year, usage grew steadily — workouts completed rose roughly 24% over a six-month period, with strong week-one retention among new users.</div>
+    <h3 class="sub">Reflection</h3>
+    <p>Alongside the pain points feeding directly into the squat machine, the interviews surfaced a wider set of UX insights into physio and trainer processes not tied to any single feature. These were recorded for future use, and later fed into a discovery session on preventative health and physio integration — research done once, used more than once.</p>
+  </div>
+</section>
+
+<section class="study">
+  <div class="wrap">
+    <span class="tag">EGYM &amp; Wellpass</span>
+    <h2 class="title">From one segmentation study to a framework the business can run on</h2>
+    <p>Most research produces a finding. This is the story of turning research into infrastructure — a throughline across three connected pieces of work: a segmentation model that reshaped strategy, an AI-powered system that makes two years of insight instantly queryable, and an in-progress framework aiming to make research language and value legible to everyone from PM to leadership.</p>
+
+    <div class="part">
+      <h4>1. The foundation — segments, JTBD &amp; golden questions</h4>
+      <p>I partnered with an external market research agency to build a segmentation model grounded in motivation psychology (SDT), personality and training behaviour. I shaped the survey design — including the questions that would later evolve into the segment-classifying "golden questions" — while the agency ran the survey, conducted the analysis, delivered the six segments, and built the predictive algorithm. I then ran JTBD research on the three core segments to understand what each genuinely valued, not just how they behaved.</p>
+      <p>The golden questions matter because they're what makes the framework usable at scale: the minimum set of questions needed to place any individual member into a segment, enabling personalised experience, messaging and marketing copy per member — something not currently possible.</p>
+      <div class="proof"><b>Proof it stuck —</b> the motivation team rewrote strategy around the three core segments, shifting toward empathic, low-barrier onboarding for beginner-type segments, and designing around another segment that acts as a natural recruiter, helping hesitant members take a first step by drawing them into groups and classes.</div>
+    </div>
+
+    <div class="part">
+      <h4>2. Scaling insight — an AI-powered research repository</h4>
+      <p>Two years of research lived across Confluence and Notion — searchable only study-by-study, so cross-study patterns rarely surfaced, and every synthesis request went through a UXR manually digging through past work. Getting a useful answer took hours, sometimes fruitlessly.</p>
+      <p>I built a structured repository in NotebookLM — 33 product notebooks, roughly 200 studies, each governed by consistent metadata (study name, product, period, market, methodology, participant type, researcher) so insight was genuinely queryable, not just stored. Access was scoped per notebook, keeping confidential projects properly restricted.</p>
+      <div class="proof"><b>Proof it works —</b> insight retrieval went from hours to minutes, self-serve. When a team redesigning onboarding for staffless gyms pulled together everything already known, they realised no new research was needed at all — they iterated and prototyped directly from existing insight, saving research capacity for where it was genuinely needed.</div>
+    </div>
+
+    <div class="part">
+      <h4>3. What's next — one shared language for research, product &amp; strategy</h4>
+      <p>I'm now building this into something more ambitious: a framework and a set of AI tools that connect segment → motivation theory → problem space → KPI → JTBD → measurable outcome — so anyone, not just a researcher, can get a grounded answer. In practice, this is currently three Claude skills: one that recommends the right segment for a given project, one that checks whether a design or flow works for a specific segment's psychology, and one — more ambitious — that tries to connect the whole chain from segment to measurable outcome in a single pass.</p>
+      <p>That last one was tested and judged too complex by my manager; it's now being split into focused, single-purpose tools instead. That's a live, ongoing process, not a finished product.</p>
+      <div class="proof"><b>The ambition —</b> this becomes shared language across product, design, research, marketing and leadership — for how the business talks about users and builds value for them, in both B2C and B2B (fitness partner) contexts.</div>
+    </div>
+
+    <h3 class="sub">Reflection</h3>
+    <p>Individually, each piece stands on its own. Together, they're one bet: that a UX Research function's biggest lever isn't the next study — it's building systems that make good research thinking available to everyone, long after the original study is finished.</p>
+  </div>
+</section>
+
+</div>
+
+<footer id="contact">
+  <div class="name2">Sally Kuehnl</div>
+  <p><a href="mailto:salnutt@gmail.com">salnutt@gmail.com</a> · <a href="https://www.linkedin.com/in/sallykuehnl/" target="_blank" rel="noopener">LinkedIn</a></p>
+</footer>
+
+</body>
+</html>
