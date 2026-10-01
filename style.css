@@ -50,6 +50,9 @@ section.body p{max-width:66ch;color:var(--ink);font-size:16px;}
 section.body p + p{margin-top:14px;}
 .proof{margin-top:14px;padding:14px 16px;background:var(--proof-bg);border-left:3px solid var(--proof-border);border-radius:4px;font-size:15px;max-width:64ch;}
 .proof b{color:var(--proof-border);}
+.ambition{margin-top:14px;padding:14px 16px;background:var(--card);border-left:3px solid var(--line);border-radius:4px;font-size:15px;max-width:64ch;color:var(--ink);}
+.ambition b{color:var(--ink);}
+.tag-wip{display:inline-block;font-size:11px;letter-spacing:.02em;color:var(--muted);border:1px solid var(--line);padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:middle;font-weight:500;}
 .part{margin-top:36px;}
 .part h4{font-family:var(--serif);font-weight:500;font-size:18px;margin-bottom:10px;}
 .matrix{margin:24px 0 8px;max-width:66ch;}
